@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BankHub - Your personal savings accounts & deposit app for Android</title>
+        <meta name="description" content="" />
+        <link
+            rel="shortcut icon"
+            href="./assets/icon.png"
+            type="image/x-icon"
+        />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:title" content="BankHub" />
+        <meta property="og:description" content="Your personal savings accounts & deposit app for Android" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.bankhub.app" />
+        <!--Replace with the current website url-->
+        <meta property="og:image" content="" />
+
+        <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css"> -->
+        <link rel="stylesheet" href="./css/tailwind-build.css" />
+        <link rel="stylesheet" href="css/index.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+            integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-[#fff]">
+        <section
+            class="tw-relative tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col 
+                    tw-overflow-hidden max-lg:tw-p-4 max-md:tw-mt-[50px]"
+        >
+            <div
+                class="tw-flex tw-h-full tw-min-h-[100vh] tw-w-full tw-place-content-center 
+                        tw-gap-6 tw-p-[5%] max-xl:tw-place-items-center max-lg:tw-flex-col"
+            >
+                <div class="tw-flex tw-flex-col tw-place-content-center">
+                    <div
+                        class="tw-flex tw-flex-wrap tw-text-6xl
+                                tw-leading-[80px] max-lg:tw-text-4xl max-md:tw-leading-snug"
+                    >
+                        <a class="tw-h-[50px] tw-w-[50px] tw-p-[4px]" href="">
+                            <img
+                                src="./assets/icon.png"
+                                alt="logo"
+                                class="tw-object tw-h-full tw-w-full"
+                            />
+                        </a>
+                        <span class="reveal-hero-text">
+                            Bank<b>Hub</b>
+                        </span>
+                    </div>
+                    <div
+                        class="reveal-hero-text tw-mt-2 tw-max-w-[450px] tw-p-2 
+                                tw-text-justify max-lg:tw-max-w-full"
+                    >
+                        <p data-l10n-id="description">Your app to manage and discover the best savings accounts and deposits all in one place. Download for free on Google Play Store!</p>
+                    </div>
+
+                    <div
+                        class="reveal-hero-text tw-mt-4 tw-flex tw-place-items-center tw-gap-4 
+                                tw-overflow-hidden tw-p-2"
+                    >
+                        <a class="tw-h-[50px] tw-max-w-[150px]" href="">
+                            <img
+                                src="./assets/images/brand-logos/google-play-badge.png"
+                                alt="app store"
+                                class="tw-h-full tw-w-full"
+                                srcset=""
+                            />
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="tw-flex tw-w-full tw-max-w-[50%] tw-place-content-center tw-place-items-center 
+                            tw-overflow-hidden max-lg:tw-max-w-[unset]"
+                >
+                    <div
+                        class="tw-relative tw-flex tw-max-h-[580px] tw-min-h-[450px] tw-min-w-[350px] 
+                            tw-max-w-[650px] tw-overflow-hidden max-lg:tw-h-fit max-lg:tw-max-h-[320px] 
+                            max-lg:tw-min-h-[180px] max-lg:tw-w-[320px] max-lg:tw-min-w-[320px]"
+                    >
+                        <img
+                            src="./assets/images/home/phone.png"
+                            alt="app"
+                            class="reveal-hero-img tw-z-[1] tw-h-full tw-w-full tw-object-contain"
+                        />
+
+                        <div
+                            class="tw-absolute tw-bottom-0 tw-left-1/2 tw-h-[80%] tw-w-[80%] 
+                                    tw--translate-x-1/2 tw-rounded-full tw-bg-secondary"
+                            id="hero-img-bg"
+                        ></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="display: none"
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center 
+                    tw-place-items-center tw-overflow-hidden tw-p-6"
+        >
+            <div
+                class="reveal-up tw-flex tw-min-h-[300px] tw-w-full tw-max-w-[80%] tw-place-items-center 
+                        tw-justify-around tw-gap-8 tw-rounded-xl tw-bg-[#e7e6e685] tw-p-4 max-lg:tw-max-w-full max-md:tw-flex-col"
+            >
+                <div class="tw-flex tw-flex-col tw-place-items-center tw-gap-4">
+                    <div class="tw-flex tw-text-xl tw-text-orange-500">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                    </div>
+                    <span class="tw-text-lg">
+                        <b>4.6/5</b>
+                        <span>from 20k reviews</span>
+                    </span>
+                    <img
+                        src="./assets/images/brand-logos/G2.svg"
+                        alt="G2"
+                        class="tw-h-[80px]"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden tw-p-6"
+        >
+            <div
+                class="reveal-up tw-flex tw-min-h-[60vh] tw-place-content-center tw-place-items-center
+                        tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-gap-10"
+            >
+                <div class="tw-flex">
+                    <div class="tw-h-[450px] tw-w-[300px]">
+                        <img
+                            src="./assets/images/home/2.png"
+                            alt="product1"
+                            class="tw-h-full tw-w-full tw-object-contain"
+                        />
+                    </div>
+                </div>
+                <div
+                    class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4"
+                >
+                    <h3 class="tw-text-4xl tw-font-medium">Your banking portfolio</h3>
+
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                            For deposits and savings accounts
+                        </h4>
+                        <span class="tw-text-xl">
+                            Add your savings details in just a few steps to keep track of them all in one place. BankHub is the first mobile app that allows you to do so easily.
+                        </span>
+                    </div>
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                            Safety first
+                        </h4>
+                        <span class="tw-text-xl">
+                            BankHub implements measures to encrypt all stored data. In addition, it will never ask you for data that could compromise your bank account, such as logins or passwords.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden tw-p-6"
+        >
+            <div
+                class="reveal-up tw-flex tw-min-h-[60vh] tw-place-content-center tw-place-items-center 
+                        tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-gap-10"
+            >
+                <div
+                    class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4"
+                >
+                    <h3 class="tw-text-4xl tw-font-medium">Explore new ways to save</h3>
+
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                            Open new accounts in seconds
+                        </h4>
+                        <span class="tw-text-xl">
+                            Discover new accounts at a glance and check their terms and conditions in seconds. BankHub takes care of gathering the most important information for you.
+                        </span>
+                    </div>
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                            Applies filtering
+                        </h4>
+                        <span class="tw-text-xl">
+                            Use the different filters available to see the accounts you are interested in. Do you want to see those that are for new users? Or maybe those that have no conditions?
+                        </span>
+                    </div>
+                </div>
+
+                <div class="tw-flex">
+                    <div class="tw-h-[450px] tw-w-[300px]">
+                        <img
+                            src="./assets/images/home/3.png"
+                            alt="product1"
+                            class="tw-h-full tw-w-full tw-object-contain"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden tw-p-6"
+        >
+            <div
+                class="reveal-up tw-flex tw-min-h-[60vh] tw-place-content-center tw-place-items-center
+                        tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-gap-10"
+            >
+                <div class="tw-flex">
+                    <div class="tw-h-[450px] tw-w-[300px]">
+                        <img
+                            src="./assets/images/home/4.png"
+                            alt="product1"
+                            class="tw-h-full tw-w-full tw-object-contain"
+                        />
+                    </div>
+                </div>
+                <div
+                    class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4"
+                >
+                    <h3 class="tw-text-4xl tw-font-medium">Always safe</h3>
+
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                            Protected by biometrics
+                        </h4>
+                        <span class="tw-text-xl">
+                            Protect your bank account data with biometrics so that only you can see it. 
+                        </span>
+                    </div>
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                            Always stored locally and encrypted
+                        </h4>
+                        <span class="tw-text-xl">
+                            All your bank account data is stored locally and is never sent to any server. It is also encrypted locally using AES-256.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer
+            class="tw-mt-auto tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-p-[5%] tw-px-[10%] 
+                    tw-text-black max-md:tw-flex-col"
+        >
+            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+                <h2 class="tw-text-3xl max-md:tw-text-xl">BankHub</h2>
+                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                    <a href="" class="footer-link">Download free on Google Play</a>
+                </div>
+            </div>
+
+            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+                <h2 class="tw-text-3xl max-md:tw-text-xl">Resources</h2>
+                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                    <a href="" class="footer-link">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    <script type="text/javascript" src="./l10n.js"></script>
+    <link rel="prefetch" type="application/l10n" href="./l10n/locales.ini" />
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
+        integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
+        integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./index.js"></script>
+
+    <style>
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            text-align: center;
+            /* font-size: 12px; */
+            opacity: 1;
+            background: #f7f7f7fa;
+            left: auto;
+        }
+        .swiper-pagination-bullet:hover {
+            color: #000;
+            opacity: 1;
+            background: #ede0e0bd;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #f39696 !important;
+        }
+
+        .swiper {
+            padding: 10px !important;
+        }
+    </style>
+</html>
