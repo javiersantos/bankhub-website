@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>BankHub - Your personal savings accounts & deposit app for Android</title>
+        <title data-l10n-id="title">BankHub - Your personal savings accounts & deposit app for Android</title>
         <meta name="description" content="" />
         <link
             rel="shortcut icon"
@@ -16,12 +16,15 @@
         <meta property="og:description" content="Your personal savings accounts & deposit app for Android" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.bankhub.app" />
-        <!--Replace with the current website url-->
         <meta property="og:image" content="" />
 
         <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css"> -->
         <link rel="stylesheet" href="./css/tailwind-build.css" />
-        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="./css/index.css" />
+
+        <!-- l10n -->
+        <script type="text/javascript" src="./l10n.js"></script>
+        <link rel="prefetch" type="application/l10n" href="./l10n/locales.ini" />
 
         <link
             rel="stylesheet"
@@ -68,8 +71,17 @@
                     </div>
 
                     <div
+                        class="reveal-hero-text tw-flex tw-flex-wrap tw-text-3xl
+                                tw-leading-[80px] max-lg:tw-text-3xl max-md:tw-leading-snug"
+                    >
+                        <span class="reveal-hero-text" data-l10n-id="available">
+                            Available in may
+                        </span>
+                    </div>
+
+                    <div
                         class="reveal-hero-text tw-mt-4 tw-flex tw-place-items-center tw-gap-4 
-                                tw-overflow-hidden tw-p-2"
+                                tw-overflow-hidden tw-p-2" style="display: none;"
                     >
                         <a class="tw-h-[50px] tw-max-w-[150px]" href="">
                             <img
@@ -154,24 +166,24 @@
                 <div
                     class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4"
                 >
-                    <h3 class="tw-text-4xl tw-font-medium">Your banking portfolio</h3>
+                    <h3 class="tw-text-4xl tw-font-medium" data-l10n-id="headline1">Your banking portfolio</h3>
 
                     <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
-                        <h4 class="tw-text-xl tw-font-medium">
+                        <h4 class="tw-text-xl tw-font-medium" data-l10n-id="feature1title">
                             <i class="bi bi-check-all !tw-text-2xl"></i>
                             For deposits and savings accounts
                         </h4>
-                        <span class="tw-text-xl">
+                        <span class="tw-text-xl" data-l10n-id="feature1description">
                             Add your savings details in just a few steps to keep track of them all in one place. BankHub is the first mobile app that allows you to do so easily.
                         </span>
                     </div>
                     <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
-                        <h4 class="tw-text-xl tw-font-medium">
+                        <h4 class="tw-text-xl tw-font-medium" data-l10n-id="feature2description">
                             <i class="bi bi-check-all !tw-text-2xl"></i>
-                            Safety first
+                            Check your personal earnings
                         </h4>
-                        <span class="tw-text-xl">
-                            BankHub implements measures to encrypt all stored data. In addition, it will never ask you for data that could compromise your bank account, such as logins or passwords.
+                        <span class="tw-text-xl" data-l10n-id="feature2description">
+                            Get a summary of all your banks' earnings, as well as a monthly and annual summary.
                         </span>
                     </div>
                 </div>
@@ -188,23 +200,23 @@
                 <div
                     class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4"
                 >
-                    <h3 class="tw-text-4xl tw-font-medium">Explore new ways to save</h3>
+                    <h3 class="tw-text-4xl tw-font-medium" data-l10n-id="headline2">Explore new ways to save</h3>
 
                     <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
-                        <h4 class="tw-text-xl tw-font-medium">
+                        <h4 class="tw-text-xl tw-font-medium" data-l10n-id="feature3title">
                             <i class="bi bi-check-all !tw-text-2xl"></i>
                             Open new accounts in seconds
                         </h4>
-                        <span class="tw-text-xl">
-                            Discover new accounts at a glance and check their terms and conditions in seconds. BankHub takes care of gathering the most important information for you.
+                        <span class="tw-text-xl" data-l10n-id="feature3description">
+                            Discover new accounts, check the APR (%) the offer and see their terms and conditions in seconds. BankHub takes care of gathering the most important information for you.
                         </span>
                     </div>
                     <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
-                        <h4 class="tw-text-xl tw-font-medium">
+                        <h4 class="tw-text-xl tw-font-medium" data-l10n-id="feature4title">
                             <i class="bi bi-check-all !tw-text-2xl"></i>
                             Applies filtering
                         </h4>
-                        <span class="tw-text-xl">
+                        <span class="tw-text-xl" data-l10n-id="feature4description">
                             Use the different filters available to see the accounts you are interested in. Do you want to see those that are for new users? Or maybe those that have no conditions?
                         </span>
                     </div>
@@ -241,23 +253,23 @@
                 <div
                     class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4"
                 >
-                    <h3 class="tw-text-4xl tw-font-medium">Always safe</h3>
+                    <h3 class="tw-text-4xl tw-font-medium" data-l10n-id="headline3">Always safe</h3>
 
                     <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
-                        <h4 class="tw-text-xl tw-font-medium">
+                        <h4 class="tw-text-xl tw-font-medium" data-l10n-id="feature5title">
                             <i class="bi bi-check-all !tw-text-2xl"></i>
                             Protected by biometrics
                         </h4>
-                        <span class="tw-text-xl">
+                        <span class="tw-text-xl" data-l10n-id="feature5description">
                             Protect your bank account data with biometrics so that only you can see it. 
                         </span>
                     </div>
                     <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
-                        <h4 class="tw-text-xl tw-font-medium">
+                        <h4 class="tw-text-xl tw-font-medium" data-l10n-id="feature6title">
                             <i class="bi bi-check-all !tw-text-2xl"></i>
                             Always stored locally and encrypted
                         </h4>
-                        <span class="tw-text-xl">
+                        <span class="tw-text-xl" data-l10n-id="feature6description">
                             All your bank account data is stored locally and is never sent to any server. It is also encrypted locally using AES-256.
                         </span>
                     </div>
@@ -272,21 +284,18 @@
             <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
                 <h2 class="tw-text-3xl max-md:tw-text-xl">BankHub</h2>
                 <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
-                    <a href="" class="footer-link">Download free on Google Play</a>
+                    <a href="" class="footer-link" data-l10n-id="download">Download free on Google Play</a>
                 </div>
             </div>
 
             <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
-                <h2 class="tw-text-3xl max-md:tw-text-xl">Resources</h2>
+                <h2 class="tw-text-3xl max-md:tw-text-xl" data-l10n-id="resources">Resources</h2>
                 <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
-                    <a href="" class="footer-link">Privacy Policy</a>
+                    <a href="" class="footer-link" data-l10n-id="privacyPolicy">Privacy Policy</a>
                 </div>
             </div>
         </footer>
     </body>
-
-    <script type="text/javascript" src="./l10n.js"></script>
-    <link rel="prefetch" type="application/l10n" href="./l10n/locales.ini" />
 
     <link
         rel="stylesheet"
