@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "app.bankhub",
+    "sha256_cert_fingerprints": ["22:53:56:0B:5B:46:4B:0B:95:87:34:7D:CC:EC:8C:CC:E8:1B:82:53:0C:51:EC:34:B0:F3:E9:60:1E:A6:32:4D"]
+  }
+}]
