@@ -324,21 +324,10 @@
 
         const openInApp = document.getElementById('open-in-app');
         if (id) {
-          openInApp.href = 'intent://explore?id=${id}#Intent;scheme=bankhub;package=app.bankhub;end';
+          openInApp.href = 'intent://explore?id=' + id + '#Intent;scheme=bankhub;package=app.bankhub;end';
         } else {
           openInApp.href = '#';
         }
-
-        window.onload = function() {
-          if (id) {
-            // Construir el deep link con el parámetro id
-            // Ejemplo: esquema personalizado de la app: myapp://item?id=1234
-            const deepLink = `bankhub://explore?id=${encodeURIComponent(id)}`;
-
-            // Redirigir al deep link para abrir la app
-            window.location.href = deepLink;
-          }
-        };
       </script>
 
     <style>
