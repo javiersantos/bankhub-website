@@ -68,6 +68,7 @@
                                 tw-text-justify max-lg:tw-max-w-full"
                     >
                         <p data-l10n-id="shareDescription">If you have BankHub installed on your device it should open automatically.</p>
+                        <a href="intent://bankhub/explore#Intent;scheme=miapp;package=com.ejemplo.app;end" id="open-in-app" data-l10n-id="openInApp">Otherwise click here to redirect to the app.</a>
                         <br>
                         <p data-l10n-id="shareDownload">Don't have the app downloaded? You can download it for free from Google Play and discover new bank accounts like this one.</p>
                     </div>
@@ -319,11 +320,11 @@
 
     <script>
         const params = new URLSearchParams(window.location.search);
-        const id = params.get('exploreId');
+        const id = params.get('explore_id');
 
         const openInApp = document.getElementById('open-in-app');
         if (id) {
-          openInApp.href = 'bankhub://explore?id=' + id;
+          openInApp.href = 'intent://explore?id=${id}#Intent;scheme=bankhub;package=tu.paquete.app;end';
         } else {
           openInApp.href = '#';
         }
